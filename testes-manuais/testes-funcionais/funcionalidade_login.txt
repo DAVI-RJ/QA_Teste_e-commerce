@@ -1,0 +1,46 @@
+@ID-CT0002
+
+Título: Login no site
+
+Descrição:
+  Acessar o perfil do usuário.
+
+Pré-condições:
+- Estar na página inicial do site: https://www.magazineluiza.com.br/
+- Usuário possui cadastrado previamente
+
+Funcionalidade:
+  Login de usuário
+
+Resultado Esperado:
+  Usuário é redirecionado à página inicial com perfil logado.
+
+Observações Gerais:
+- Teste realizado Google Chrome Versão 140.0.7339.127 (Versão oficial) 64 bits
+- Distributor ID:	Ubuntu
+  Description:	Ubuntu 24.04.3 LTS
+  Release:	24.04
+  Codename:	noble
+
+- Dados fictícios utilizados
+
+Passos:
+1. Acessar https://www.magazineluiza.com.br/
+2. Clicar no icone “Entre ou Cadastre-se”
+3. Informar e-mail válido
+4. Informar a Senha
+5. Clicar em “Continuar”
+6. Verificar redirecionamento para home
+
+
+Critérios de Aceitação:
+- Todos os campos obrigatórios preenchidos corretamente
+- Redirecionamento para home
+
+Dados de Teste:
+- E-mail: podima3609@bllibl.com
+- Senha: Teste@2025
+
+Evidência:
+- login_evidencias/
+
