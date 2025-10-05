@@ -12,7 +12,7 @@ Funcionalidade: Cadastro de usuário
     E clico no botão "Continuar"
     Então vejo a mensagem "Sua conta está cadastrada"
 
-  Cenário: Cadastro com dados inválidos
+  Cenário: Cadastro com o e-mail já cadastrado
     Dado que estou na página de cadastro
     Quando preencho o campo email com email já cadastrado
     Então vejo a mensagem "Já existe uma conta com esse e-mail."

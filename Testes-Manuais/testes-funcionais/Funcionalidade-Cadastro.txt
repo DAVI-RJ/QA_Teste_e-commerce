@@ -1,13 +1,14 @@
-@ID-CT0001
+@ID-CT0001-01
 
-Cenário de Testes - Squad Xpto
+
+Funcionalidade:
+-Cadastro de usuário
+
+Cadastro de usuário - Squad Xpto
 
 Pré-condições:
 - Estar na página inicial do site: https://www.magazineluiza.com.br/
 - Usuário não cadastrado previamente
-
-Funcionalidade:
-Cadastro de usuário
 
 Resultado Esperado:
 Usuário é redirecionado à página inicial com perfil logado e mensagem de sucesso.
@@ -58,3 +59,48 @@ Evidência:
 Status: 
 - passou
 
+
+
+@ID-CT0001-02
+
+Funcionalidade:
+-Cadastro de usuário
+
+Cadastro com o e-mail já cadastrado - Squad Xpto
+
+Pré-condições:
+- Estar na página inicial do site: https://www.magazineluiza.com.br/
+
+Resultado Esperado:
+-Alerta a mensagem "Já existe uma conta com esse e-mail.".
+
+Observações Gerais:
+- Teste realizado Google Chrome Versão 140.0.7339.127 (Versão oficial) 64 bits
+- Distributor ID:	Ubuntu
+  Description:	Ubuntu 24.04.3 LTS
+  Release:	24.04
+  Codename:	noble
+  
+Passos:
+1. Acessar https://www.magazineluiza.com.br/
+2. Clicar em “Cadastre-se”
+3. Informar e-mail
+
+ou 
+  Dado que estou na página de cadastro
+  Quando preencho o campo email com email já cadastrado
+  Então vejo a mensagem "Já existe uma conta com esse e-mail."
+  E NÃO habilita o campo botão "Continuar"
+
+Critérios de Aceitação:
+-Impedir que use o mesmo email já cadastrado
+
+Dados de Teste:
+- E-mail: podima3609@bllibl.com
+
+Evidência:
+- cadastrado_evidencias/
+  @ID-CT0001-02
+
+Status: 
+- passou
