@@ -43,6 +43,7 @@ Evidência:
 Status
 - Passou 
 
+
 @ID-CT0002-02
 
 login com senha incorreta - Squad Xpto
@@ -68,7 +69,7 @@ Passos:
 3. Informar e-mail válido
 4. Informar a Senha incorreta
 5. Clicar em “Continuar”
-6. Mensagem de alerta "senha incorreta". 
+6. Mensagem de alerta "Dados invalido". 
 
 
 Critérios de Aceitação:

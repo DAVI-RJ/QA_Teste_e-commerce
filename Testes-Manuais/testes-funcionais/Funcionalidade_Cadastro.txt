@@ -152,7 +152,7 @@ Dados de Teste:
 
 Evidência:
 - cadastrado_evidencias/
-  @ID-CT0001-03
+  @ID-CT0001-03-01 /  @ID-CT0001-03-02 /  @ID-CT0001-03-03
 
 Status: 
 - passou
