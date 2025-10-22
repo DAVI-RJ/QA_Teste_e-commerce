@@ -1,10 +1,9 @@
-@ID-CT0001-01
-
-
 Funcionalidade:
 -Cadastro de usuário
 
-Cadastro de usuário - Squad Xpto
+@ID-CT0001-01
+
+Cadastro com dados válidos - Squad Xpto
 
 Pré-condições:
 - Estar na página inicial do site: https://www.magazineluiza.com.br/
@@ -30,7 +29,7 @@ Passos:
 6. Aceitar os termos de uso
 7. Clicar em “Continuar”
 8. Validar mensagem “Sua conta está cadastrada”
-7. Verificar redirecionamento para home
+9. Verificar redirecionamento para home
 
 ou 
 
@@ -60,11 +59,7 @@ Status:
 - passou
 
 
-
 @ID-CT0001-02
-
-Funcionalidade:
--Cadastro de usuário
 
 Cadastro com o e-mail já cadastrado - Squad Xpto
 
@@ -101,6 +96,115 @@ Dados de Teste:
 Evidência:
 - cadastrado_evidencias/
   @ID-CT0001-02
+
+Status: 
+- passou
+
+
+@ID-CT0001-03
+
+Cadastro sem aceitar os termos - Squad Xpto
+
+Pré-condições:
+- Estar na página inicial do site: https://www.magazineluiza.com.br/
+- Usuário não cadastrado previamente
+
+Resultado Esperado:
+Não permitir que o usuário continue com o cadastro.
+
+Observações Gerais:
+- Teste realizado Google Chrome Versão 140.0.7339.127 (Versão oficial) 64 bits
+- Distributor ID:	Ubuntu
+  Description:	Ubuntu 24.04.3 LTS
+  Release:	24.04
+  Codename:	noble
+  
+Passos:
+1. Acessar https://www.magazineluiza.com.br/
+2. Clicar em “Cadastre-se”
+3. Informar e-mail válido
+4. Clicar em “Continuar”
+5. Preencher os campos: E-mail, Tipo de conta, CPF, Nome completo,
+          Data de nascimento, Senha, CEP, Notificações
+6. Não os termos de uso
+7. Verificar se o botão "Continuar" está desabilitado.
+8. Mensagem de aviso "os temos devem ser aceitos".   
+
+ou 
+
+  Dado que estou na página de cadastro
+  Quando preencho os campos obrigatórios "E-mail, Tipo de conta, CPF, Nome completo, Data de nascimento, Senha, CEP, Notificações"
+  E não marco à opção "Li e aceito a Política de privacidade do Grupo Magazine Luiza."
+  Então NÃO habilita o campo botão "Continuar"
+   
+
+Critérios de Aceitação:
+- Todos os campos obrigatórios preenchidos
+- Termos de uso não aceitos
+- botão “Continuar” desabilitado
+- lembrete para aceitar o termos
+
+Dados de Teste:
+- Nome: Davi Ribeiro
+- CPF: 295.950.920-02
+- E-mail: podima3609@bllibl.com
+- Senha: Teste@2025
+
+Evidência:
+- cadastrado_evidencias/
+  @ID-CT0001-03
+
+Status: 
+- passou
+
+
+@ID-CT0001-04
+
+Cadastro com dados inválidos - Squad Xpto
+
+Pré-condições:
+- Estar na página inicial do site: https://www.magazineluiza.com.br/
+- Usuário não cadastrado previamente
+
+Resultado Esperado:
+  vejo a mensagem "O e-mail não foi digitado corretamente."
+  NÃO habilita o campo botão "Continuar"
+
+Observações Gerais:
+- Teste realizado Google Chrome Versão 140.0.7339.127 (Versão oficial) 64 bits
+- Distributor ID:	Ubuntu
+  Description:	Ubuntu 24.04.3 LTS
+  Release:	24.04
+  Codename:	noble
+  
+Passos:
+1. Acessar https://www.magazineluiza.com.br/
+2. Clicar em “Cadastre-se”
+3. Informar e-mail inválido
+4. Vejo a mensagem "O e-mail não foi digitado corretamente."
+5. Verificar se o botão "Continuar" está desabilitado.
+
+ou 
+
+  Dado que estou na página de cadastro
+  Quando preencho o campo email sem o @
+  Então vejo a mensagem "O e-mail não foi digitado corretamente."
+  E NÃO habilita o campo botão "Continuar"
+   
+
+Critérios de Aceitação:
+- mensagem de aviso sobre email invalido
+- botão “Continuar” desabilitado
+
+Dados de Teste:
+- Nome: Davi Ribeiro
+- CPF: 295.950.920-02
+- E-mail: podima3609bllibl.com
+- Senha: Teste@2025
+
+Evidência:
+- cadastrado_evidencias/
+  @ID-CT0001-04
 
 Status: 
 - passou

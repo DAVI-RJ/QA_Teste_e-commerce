@@ -24,8 +24,5 @@ teste_manuais/
 ## Autor
 - Davi Justo
 
-## Status do Projeto
-- Em desenvolvimento
-
 ## Pré-requisitos
 - Estar na página inicial do site: https://www.magazineluiza.com.br/

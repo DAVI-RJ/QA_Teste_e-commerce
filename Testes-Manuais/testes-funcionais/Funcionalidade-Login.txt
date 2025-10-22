@@ -1,16 +1,13 @@
-@ID-CT0002
+Funcionalidade:
+-Login no site
 
-Título: Login no site
+@ID-CT0002-01
 
-Descrição:
-  Acessar o perfil do usuário.
+login de usuário com dados correto - Squad Xpto
 
 Pré-condições:
 - Estar na página inicial do site: https://www.magazineluiza.com.br/
 - Usuário possui cadastrado previamente
-
-Funcionalidade:
-  Login de usuário
 
 Resultado Esperado:
   Usuário é redirecionado à página inicial com perfil logado.
@@ -21,8 +18,6 @@ Observações Gerais:
   Description:	Ubuntu 24.04.3 LTS
   Release:	24.04
   Codename:	noble
-
-- Dados fictícios utilizados
 
 Passos:
 1. Acessar https://www.magazineluiza.com.br/
@@ -43,4 +38,51 @@ Dados de Teste:
 
 Evidência:
 - login_evidencias/
+  @ID-CT0002-01
+
+Status
+- Passou 
+
+@ID-CT0002-02
+
+login com senha incorreta - Squad Xpto
+
+Pré-condições:
+- Estar na página inicial do site: https://www.magazineluiza.com.br/
+- Usuário possui cadastrado previamente
+
+Resultado Esperado:
+  Mensagem de alerta "senha incorreta". 
+
+Observações Gerais:
+- Teste realizado Google Chrome Versão 140.0.7339.127 (Versão oficial) 64 bits
+- Distributor ID:	Ubuntu
+  Description:	Ubuntu 24.04.3 LTS
+  Release:	24.04
+  Codename:	noble
+
+
+Passos:
+1. Acessar https://www.magazineluiza.com.br/
+2. Clicar no icone “Entre ou Cadastre-se”
+3. Informar e-mail válido
+4. Informar a Senha incorreta
+5. Clicar em “Continuar”
+6. Mensagem de alerta "senha incorreta". 
+
+
+Critérios de Aceitação:
+- Todos os campos obrigatórios preenchidos corretamente
+- Informar o usuário que o campo senha está incorreto
+
+Dados de Teste:
+- E-mail: podima3609@bllibl.com
+- Senha: Teste@2026
+
+Evidência:
+- login_evidencias/
+  @ID-CT0002-02
+
+Status
+- Passou 
 
