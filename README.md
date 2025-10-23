@@ -16,7 +16,7 @@ teste_manuais/
 ```
 
 ## Tecnologias Utilizadas
-- Gherkin/Cucumber para escrita dos cenários
+- Gherkin para escrita dos cenários
 - Teste realizado Google Chrome Versão 140.0.7339.127 64 bits
 - OS:	Ubuntu
   Description:	Ubuntu 24.04.3 LTS
